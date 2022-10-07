@@ -17,10 +17,10 @@ double H(double x1, double y1, double x2, double y2, double x3, double y3) {
 }
 
 double min3(double x, double y, double z) {
-    if (x >= y && x >= z) {
+    if (x <= y && x <= z) {
         return x;
     }
-    else if (y >= x && y >= z) {
+    else if (y <= x && y <= z) {
         return y;
     }
     else {
